@@ -28,14 +28,14 @@ body {
 
 /* CABEÇALHO */
 .cabecalho {
-    padding: 2% 0% 0% 6.5%;
+    padding: 2% 0% 0% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .cabecalho .cabecalho__menu{
-    gap: 8rem;
+    gap: 7rem;
     margin-left: 24rem;
 }
 
@@ -201,20 +201,12 @@ body {
 
 .imagem__meusprojetos {
     width: 310px;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    transition: transform 1.5s ease;
-    transform-style: preserve-3d; /* Mantém a perspectiva 3D mesmo após a transformação */
+    transition: 0.5s;
 }
 
 .imagem__meusprojetos:hover {
-    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg) scale(1.1); /* Rotação 3D e escala */
-}
-
-.imagem__meusprojetos:active {
-    transition: transform 1.5s ease, scale 0.5s ease; /* Adiciona uma transição de escala separada */
-    transform: scale(0.9); /* Reduz o tamanho da imagem quando o link é clicado */
+    filter: brightness(0.3);
+    transform: scale(1.2);
 }
 
 .rodape {
